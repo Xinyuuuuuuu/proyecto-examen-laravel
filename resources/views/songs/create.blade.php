@@ -27,7 +27,7 @@
             <input type="text" name="artista" id="artista" value="{{ old('artista') }}">
         </div>
 
-        <select name="podcast_id" id="podcast_id">
+       <select name="podcast_id" id="podcast_id">
             @foreach ($podcasts as $podcast)
                 <option value="{{ $podcast->id }}">
                     {{ $podcast->titulo }}

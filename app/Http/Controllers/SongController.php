@@ -42,6 +42,7 @@ class SongController extends Controller
         return view('songs.create', compact('podcasts'));
     }
 
+    //store sin pivot
     public function store(Request $request)
     {
         $request->validate(
@@ -116,7 +117,7 @@ class SongController extends Controller
         return view('songs.show', compact('song', 'podcasts'));
     }
 
-    //---------------Edit individuales---------------//
+    //---------------Edit individuales de botones de edición separados---------------//
 
     public function updateNombre(Request $request, $id)
     {
